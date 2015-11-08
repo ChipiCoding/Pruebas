@@ -12,7 +12,10 @@ var configFunction = function ($routeProvider) {
         })
         .when('/optionThree', {
             templateUrl: 'Menu/three'
-        });
+        })
+        .otherwise({
+            redirectTo: '/'
+    });;
 }
 
 configFunction.$inject = ['$routeProvider'];
