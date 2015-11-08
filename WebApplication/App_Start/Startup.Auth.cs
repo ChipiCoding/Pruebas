@@ -10,8 +10,6 @@ namespace WebApplication
     {
         public void ConfigureAuth(IAppBuilder app)
         {
-            //app.CreatePerOwinContext(ApplicationDbContext.Create);
-
             // Permitir que la aplicación use una cookie para almacenar información para el usuario que inicia sesión
             // y una cookie para almacenar temporalmente información sobre un usuario que inicia sesión con un proveedor de inicio de sesión de terceros
             // Configurar cookie de inicio de sesión
