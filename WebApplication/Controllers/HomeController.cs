@@ -1,5 +1,4 @@
 ﻿using System.Web.Mvc;
-using WebApplication.Class;
 
 namespace WebApplication.Controllers
 {
@@ -10,11 +9,11 @@ namespace WebApplication.Controllers
             return View();
         }
 
-        public JsonResult Save(Customer customer)
-        {
-            DBContext context = new DBContext();
-            context.Save(customer);
-            return null;
-        }
+        //public JsonResult Save(Customer customer)
+        //{
+        //    DBContext context = new DBContext();
+        //    context.Save(customer);
+        //    return null;
+        //}
     }
 }

@@ -14,8 +14,8 @@ var configFunction = function ($routeProvider) {
         .when('/optionThree', {
             templateUrl: 'Menu/three'
         })
-        .when('/Prueba', {
-            templateUrl: 'Menu/Prueba'
+        .when('/DocumentsTypes', {
+            templateUrl: 'DocumentsTypes/index'
         })
         .otherwise({
             redirectTo: '/'
