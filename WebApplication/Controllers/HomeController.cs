@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using WebApplication.Class;
 
 namespace WebApplication.Controllers
 {
@@ -11,6 +8,13 @@ namespace WebApplication.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public JsonResult Save(Customer customer)
+        {
+            DBContext context = new DBContext();
+            context.Save(customer);
+            return null;
         }
     }
 }
