@@ -9,20 +9,24 @@
 
 namespace WcfService
 {
-    using System;
     using System.Collections.Generic;
-    
-    public partial class City
+    using System.Runtime.Serialization;
+
+    [DataContract]
+    public class City
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public City()
         {
             this.Customers = new HashSet<Customer>();
         }
-    
+
+        [DataMember]
         public int id { get; set; }
+
+        [DataMember]
         public string name { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Customer> Customers { get; set; }
     }
