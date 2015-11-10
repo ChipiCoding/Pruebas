@@ -11,33 +11,17 @@ namespace WcfService
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.Serialization;
-
-    [DataContract]
-    public class Customer
+    
+    public partial class Customer
     {
-        [DataMember]
         public int id { get; set; }
-
-        [DataMember]
         public int idDocumentType { get; set; }
-
-        [DataMember]
         public string documentNumber { get; set; }
-
-        [DataMember]
         public System.DateTime birthdate { get; set; }
-
-        [DataMember]
         public int idCity { get; set; }
-
-        [DataMember]
         public string movilNumber { get; set; }
-
-        [DataMember]
         public string name { get; set; }
-
-        [DataMember]
+    
         public virtual City City { get; set; }
         public virtual DocumentsType DocumentsType { get; set; }
     }

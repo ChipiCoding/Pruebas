@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using WcfService.ClassSerializer;
 
 namespace WcfService
 {
@@ -16,6 +17,6 @@ namespace WcfService
         [WebGet(RequestFormat = WebMessageFormat.Json,
            ResponseFormat = WebMessageFormat.Json,
            UriTemplate = "/GetCustomers/")]
-        List<Customer> GetAll();
+        List<CustomerSerializer> GetAll();
     }
 }
