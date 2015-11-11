@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html ng-app="WebApp" ng-controller="MenuController">
+<html ng-app="App">
 <head>
     <title ng-bind="models.Title"></title>
     @Styles.Render("~/Content/css")
 </head>
-<body>
+<body ng-controller="MenuController">
     <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -28,6 +28,10 @@
             </div>
         </div>
 
+        <div class="jumbotron" ng-controller="CustomersController"> 
+            {{Customers}}
+        </div>
+
         <footer>
             <p>&copy; @DateTime.Now - Andrés Mauricio Zapata Caro</p>
         </footer>
@@ -35,10 +39,15 @@
 
 
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.7/angular-resource.js"></script>
+
+    <script src="~/Scripts/Controllers/Module.js"></script>
+    <script src="~/Scripts/Controllers/Services.js"></script>
+    <script src="~/Scripts/Controllers/Controllers.js"></script>
 
 
-    @Scripts.Render("~/bundles/WebApp")
+    @*@Scripts.Render("~/bundles/App")*@
 </body>
 </html>

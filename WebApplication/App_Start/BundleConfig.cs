@@ -9,9 +9,9 @@ namespace WebApplication
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/WebApp")
+            bundles.Add(new ScriptBundle("~/bundles/App")
                 .IncludeDirectory("~/Scripts/Controllers", "*.js")
-                .Include("~/Scripts/WebApp.js"));
+                .Include("~/Scripts/Module.js"));
 
             BundleTable.EnableOptimizations = true;
         }

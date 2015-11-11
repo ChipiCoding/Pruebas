@@ -207,8 +207,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\Controllers\LoadPageController.js" />
-    <Content Include="Scripts\Controllers\WebApp.js" />
+    <Content Include="Scripts\Controllers\Controllers.js" />
+    <Content Include="Scripts\Controllers\Services.js" />
+    <Content Include="Scripts\Controllers\Module.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

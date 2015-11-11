@@ -1,7 +1,4 @@
-﻿var WebApp = angular.module('WebApp', ['ngRoute']);
-
-WebApp.controller('MenuController', MenuController);
-//WebApp.controller('PruebaController', PruebaController);
+﻿var App = angular.module('App', ['ngRoute', 'ngResource']);
 
 var configFunction = function ($routeProvider) {
     $routeProvider.
@@ -24,4 +21,4 @@ var configFunction = function ($routeProvider) {
 
 configFunction.$inject = ['$routeProvider'];
 
-WebApp.config(configFunction);
+App.config(configFunction);
